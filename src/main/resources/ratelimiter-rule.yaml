@@ -1,0 +1,17 @@
+Configs:
+- appId: app-1
+  limits:
+  - api: /v1/user/info
+    limit: 100
+    unit: 60
+  - api: /v1/user/logix
+    limit: 50
+  - api: /v1/order
+    limit: 20
+- appId: app-2
+    limits:
+    - api: /v1/user/add
+      limit: 50
+    - api: /v1/order
+      limit: 50
+
